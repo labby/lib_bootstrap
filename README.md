@@ -10,7 +10,7 @@ For details please see: http://getbootstrap.com/
 
 #### Installation
 
-* download latest [lib_semantic.zip] [2] installation archive
+* download latest [lib_bootstrap.zip] [2] installation archive
 * in CMS backend select the file from "Add-ons" -> "Modules" -> "Install module"
 
 #### First Steps
