@@ -4,7 +4,7 @@
  *  @module      	Library Bootstrap
  *  @version        see info.php of this module
  *  @author         cms-lab
- *  @copyright      2014-2015 CMS-LAB
+ *  @copyright      2014-2017 CMS-LAB
  *  @license        https://github.com/twbs/bootstrap/blob/master/LICENSE
  *  @license terms  see info.php of this template
  *  @platform       see info.php of this template
@@ -34,8 +34,8 @@ if (defined('LEPTON_PATH')) {
 $module_directory = 'lib_bootstrap';
 $module_name      = 'Bootstrap Library';
 $module_function  = 'library';
-$module_version   = '3.3.7.0';
-$module_platform  = '2.x';
+$module_version   = '4.0.0.0';  // 4.0.0. beta
+$module_platform  = '3.x';
 $module_delete	  =  true;
 $module_author    = 'cms-lab';
 $module_license   = 'https://github.com/twbs/bootstrap/blob/master/LICENSE';
