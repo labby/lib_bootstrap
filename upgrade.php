@@ -29,7 +29,37 @@ if (defined('LEPTON_PATH')) {
 }
 // end include class.secure.php
 
+//  remove unneeded files 
+if (!function_exists('rm_full_dir')) {
+    include_once LEPTON_PATH.'/framework/functions/function.rm_full_dir.php';
+}
 
+if (file_exists (LEPTON_PATH.'/modules/lib_bootstrap/bootstrap/fonts/index.php')) {	
+		rm_full_dir( LEPTON_PATH.'/modules/lib_bootstrap/bootstrap/fonts' ); 
+}
 
-
+$temp_path = LEPTON_PATH ."/modules/lib_bootstrap/bootstrap/css/";
+$to_delete = array(
+		"bootstrap-theme.css",
+		"bootstrap-theme.css.map",
+		"bootstrap-theme.min.css",
+		"bootstrap-theme.min.css.map",
+		"bootstrap-reboot.min.css",		
+		"bootstrap-reboot.min.css.map",
+		"bootstrap-reboot.css",
+		"bootstrap-reboot.css.map",
+		"bootstrap-grid.css",
+		"bootstrap-grid.css.map",
+		"bootstrap-grid.min.css",
+		"bootstrap-grid.min.css.map"
+);
+		
+foreach ($to_delete as $ref)  {	
+	if (file_exists($temp_path.$ref)) {
+		$result = unlink ($temp_path.$ref);
+		if (false === $result) {
+			echo "Cannot delete file ".$ref.". Please check file permissions and ownership or delete file manually.";
+		}
+	}
+}
 ?>
