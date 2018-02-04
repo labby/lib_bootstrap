@@ -4,7 +4,7 @@
  *  @module      	Library Bootstrap
  *  @version        see info.php of this module
  *  @author         cms-lab
- *  @copyright      2014-2017 CMS-LAB
+ *  @copyright      2014-2018 CMS-LAB
  *  @license        http://opensource.org/licenses/MIT
  *  @license terms  see info.php of this template
  *  @platform       see info.php of this template
