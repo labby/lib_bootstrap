@@ -34,7 +34,7 @@ if (defined('LEPTON_PATH')) {
 $module_directory = 'lib_bootstrap';
 $module_name      = 'Bootstrap Library';
 $module_function  = 'library';
-$module_version   = '4.0.1.0'; 
+$module_version   = '4.1.0.0'; 
 $module_platform  = '3.x';
 $module_delete	  =  true;
 $module_author    = 'cms-lab';
